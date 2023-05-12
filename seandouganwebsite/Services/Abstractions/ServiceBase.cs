@@ -1,6 +1,6 @@
 ﻿namespace seandouganwebsite.Services.Abstractions;
 
-public class ServiceBase
+public abstract class ServiceBase : IServiceBase
 {
     
 }

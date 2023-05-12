@@ -1,6 +1,6 @@
 ﻿namespace seandouganwebsite.Models.ViewModels;
 
-public class LayoutViewModel : BaseViewModel
+public class LayoutViewModel
 {
     
 }

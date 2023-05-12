@@ -1,6 +1,6 @@
 ﻿namespace seandouganwebsite.Models.ViewModels;
 
-public class HomeViewModel : BaseViewModel
+public class HomeViewModel
 {
     
 }
