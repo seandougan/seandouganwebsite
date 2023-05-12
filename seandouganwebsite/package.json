@@ -1,0 +1,37 @@
+{
+  "name": "seandouganwebsite",
+  "version": "1.0.0",
+  "description": "sean dougans' portfolio website",
+  "main": "site.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "author": "Sean Dougan",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "bootstrap-sass": "^3.4.3",
+    "file-loader": "^6.2.0",
+    "jquery": "^3.6.4",
+    "jquery-validation": "^1.19.5",
+    "jquery-validation-unobtrusive": "^4.0.0",
+    "node-sass": "^8.0.0",
+    "sass": "^1.62.1",
+    "url-loader": "^4.1.1"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.7.3",
+    "html-webpack-plugin": "^5.5.1",
+    "mini-css-extract-plugin": "^2.7.5",
+    "sass-loader": "^13.2.2",
+    "style-loader": "^3.3.2",
+    "terser-webpack-plugin": "^5.3.8",
+    "ts-loader": "^9.4.2",
+    "typescript": "^5.0.4",
+    "webpack": "^5.82.0",
+    "webpack-cli": "^5.1.1",
+    "webpack-merge": "^5.8.0"
+  }
+}

@@ -1,10 +1,17 @@
 ﻿{
-    "compilerOptions": {
-        "module": "commonjs",
-        "target": "es5",
-        "sourceMap": true
-    },
-    "exclude": [
-        "node_modules"
-    ]
+  "compilerOptions": {
+    "module": "CommonJS",
+    "target": "es5",
+    "lib": ["es5", "es6", "dom"],
+    "sourceMap": true,
+    "noImplicitAny": false,
+    "noEmitOnError": true,
+    "removeComments": false
+  },
+  "include" : [
+    "./src/ts/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

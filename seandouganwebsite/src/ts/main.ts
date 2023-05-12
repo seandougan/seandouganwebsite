@@ -1,1 +1,4 @@
-﻿import "../node_modules/jquery";
+﻿require('jquery');
+require('jquery-validation');
+require('jquery-validation-unobtrusive');
+require('../css/main.scss');

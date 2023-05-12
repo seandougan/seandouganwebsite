@@ -1,0 +1,49 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UserSecretsId>aspnet-seandouganwebsite-33898FC6-055D-4462-8D83-DB5846E0F7BE</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.13" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.13" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Models\DTO" />
+      <Folder Include="Test" />
+      <Folder Include="Views\ViewComponents" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="wwwroot\lib\jquery\dist\jquery.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\jquery\dist\jquery.min.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\jquery\dist\jquery.min.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\jquery\LICENSE.txt" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\site.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\dist\main.entry.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\dist\main.entry.js.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\dist\runtime.entry.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\dist\runtime.entry.js.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\dist\vendors-node_modules_bootstrap-sass_assets_javascripts_bootstrap_js-node_modules_jquery-valid-006b16.entry.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\dist\vendors-node_modules_bootstrap-sass_assets_javascripts_bootstrap_js-node_modules_jquery-valid-006b16.entry.js.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\dist\vendors-node_modules_bootstrap-sass_assets_javascripts_bootstrap_js-node_modules_jquery-valid-73bf4d.entry.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\dist\vendors-node_modules_bootstrap-sass_assets_javascripts_bootstrap_js-node_modules_jquery-valid-73bf4d.entry.js.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\dist\vendors-node_modules_bootstrap_dist_css_bootstrap_css-node_modules_bootstrap_dist_js_bootstra-823d78.entry.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\dist\vendors-node_modules_bootstrap_dist_css_bootstrap_css-node_modules_bootstrap_dist_js_bootstra-823d78.entry.js.map" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="src\css\main.scss" />
+      <Content Include="src\css\_customVariables.scss" />
+      <None Include="src\css\_Layout.scss" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <TypeScriptCompile Include="src\ts\main.ts" />
+    </ItemGroup>
+
+</Project>
