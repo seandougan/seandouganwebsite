@@ -7,6 +7,6 @@ public class FreeServices : Controller
     // GET
     public IActionResult Index()
     {
-        return View();
+        return View("~/views/FreeServices.cshtml");
     }
 }
