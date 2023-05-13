@@ -10,6 +10,7 @@
     <ItemGroup>
         <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.13" />
         <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.13" />
+        <PackageReference Include="Serilog" Version="3.0.0-dev-01998" />
     </ItemGroup>
 
     <ItemGroup>

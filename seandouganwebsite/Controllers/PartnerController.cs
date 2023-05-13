@@ -7,6 +7,6 @@ public class PartnerController : Controller
     // GET
     public IActionResult Index()
     {
-        return View();
+        return View("~/views/Home/Partners.cshtml");
     }
 }

@@ -7,6 +7,6 @@ public class ThisApplication : Controller
     // GET
     public IActionResult Index()
     {
-        return View();
+        return View("~/views/ThisApplication.cshtml");
     }
 }
