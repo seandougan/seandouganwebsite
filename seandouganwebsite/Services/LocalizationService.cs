@@ -1,6 +1,8 @@
-﻿namespace seandouganwebsite.Services;
+﻿using seandouganwebsite.Services.Abstractions;
 
-public class LocalizationService
+namespace seandouganwebsite.Services;
+
+public class LocalizationService :  ServiceBase, ILocalizationService
 {
     
 }
