@@ -26,7 +26,7 @@ public class HomeController : BaseController
         return Redirect("https://github.com/seandougan");
     }
 
-    public IActionResult Privacy()
+    public IActionResult Partners()
     {
         return View();
     }

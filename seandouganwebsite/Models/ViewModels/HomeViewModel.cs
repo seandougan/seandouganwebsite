@@ -1,6 +1,11 @@
-﻿namespace seandouganwebsite.Models.ViewModels;
+﻿using seandouganwebsite.Models.ViewModels.Abstractions;
 
-public class HomeViewModel
+namespace seandouganwebsite.Models.ViewModels;
+
+public class HomeViewModel : BaseViewModel
 {
-    
+    public HomeViewModel()
+    {
+        title = "Home";
+    }
 }
