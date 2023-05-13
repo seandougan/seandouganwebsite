@@ -14,8 +14,11 @@
 
     <ItemGroup>
       <Folder Include="Models\DTO" />
-      <Folder Include="Test" />
-      <Folder Include="Views\ViewComponents" />
+      <Folder Include="Test\IntegrationTest" />
+      <Folder Include="Test\UITest" />
+      <Folder Include="Test\UnitTest" />
+      <Folder Include="ViewComponents" />
+      <Folder Include="Views\Shared\ViewComponents" />
     </ItemGroup>
 
     <ItemGroup>

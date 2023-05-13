@@ -2,11 +2,10 @@
 
 namespace seandouganwebsite.Models.ViewModels;
 
-public class LayoutViewModel : BaseViewModel
+public class PartnerViewModel : BaseViewModel
 {
-    public LayoutViewModel()
+    public PartnerViewModel()
     {
-        
+        title = "Partners";
     }
-    
 }
