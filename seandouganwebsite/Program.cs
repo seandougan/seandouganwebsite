@@ -1,10 +1,15 @@
 
+using seandouganwebsite.Services;
+using seandouganwebsite.Services.Abstractions;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
+
+builder.Services.AddScoped<ILocalizationService, LocalizationService>();
 
 
 var app = builder.Build();

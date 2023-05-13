@@ -4,7 +4,7 @@ using seandouganwebsite.Models;
 
 namespace seandouganwebsite.Controllers;
 
-public class BaseController : Controller
+public abstract class BaseController : Controller
 {
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
