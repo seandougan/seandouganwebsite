@@ -2,6 +2,7 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const ESLintPlugin = require('eslint-webpack-plugin');
 
 module.exports = {
     entry: './src/ts/main.ts',
@@ -42,7 +43,25 @@ module.exports = {
                 test: /\.scss$/,
                 use: [
                     MiniCssExtractPlugin.loader,
-                    'css-loader',
+                    // added postcss-loader
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            importLoaders: 1
+                        }
+                    },
+                    {
+                        loader: 'postcss-loader',
+                        options: {
+                            postcssOptions: {
+                                plugins: [
+                                    require('cssnano')({
+                                        preset: 'default',
+                                    }),
+                                ],
+                            },
+                        },
+                    },
                     {
                         loader: 'sass-loader',
                         options: {
@@ -56,16 +75,19 @@ module.exports = {
             {
                 test: /\.(eot|woff(2)?|ttf|otf|svg)$/i,
                 loader: 'file-loader'
-                
+
             }
         ]
     },
     plugins: [
+        new ESLintPlugin({ 
+            extensions: ['ts', 'js'],
+        }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
             filename: '[name].css',
             chunkFilename: '[id].css',
         }),
+        
     ]
 };
-``

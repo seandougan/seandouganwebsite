@@ -4,8 +4,9 @@
   "description": "sean dougans' portfolio website",
   "main": "site.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "test": "jest",
+    "build": "webpack",
+    "dev": "npm run test && npm run build"
   },
   "author": "Sean Dougan",
   "license": "ISC",
@@ -21,10 +22,19 @@
     "url-loader": "^4.1.1"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.21.5",
+    "@babel/preset-typescript": "^7.21.5",
+    "@typescript-eslint/eslint-plugin": "^5.59.6",
+    "@typescript-eslint/parser": "^5.59.6",
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.7.3",
+    "cssnano": "^6.0.1",
+    "eslint": "^8.40.0",
+    "eslint-webpack-plugin": "^4.0.1",
     "html-webpack-plugin": "^5.5.1",
+    "jest": "^29.5.0",
     "mini-css-extract-plugin": "^2.7.5",
+    "postcss-loader": "^7.3.0",
     "sass-loader": "^13.2.2",
     "style-loader": "^3.3.2",
     "terser-webpack-plugin": "^5.3.8",

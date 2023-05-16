@@ -6,20 +6,40 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <UserSecretsId>aspnet-seandouganwebsite-33898FC6-055D-4462-8D83-DB5846E0F7BE</UserSecretsId>
     </PropertyGroup>
+ 
+    <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+        <Exec Command="npm install" />
+        <Exec Command="npm run dev" />
+    </Target>
 
     <ItemGroup>
+        <PackageReference Include="FluentAssertions" Version="6.11.0" />
         <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.13" />
         <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.13" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.6.0-preview-20230223-05" />
+        <PackageReference Include="Microsoft.Playwright" Version="1.33.0" />
+        <PackageReference Include="Microsoft.Playwright.NUnit" Version="1.33.0" />
+        <PackageReference Include="Microsoft.Playwright.TestAdapter" Version="1.33.0" />
+        <PackageReference Include="NUnit" Version="3.13.3" />
+        <PackageReference Include="NUnit.Analyzers" Version="3.6.1">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="NUnit.Console" Version="3.16.3" />
+        <PackageReference Include="NUnit.ConsoleRunner" Version="3.16.3" />
+        <PackageReference Include="NUnit.Extension.NUnitProjectLoader" Version="3.7.1" />
+        <PackageReference Include="NUnit.Extension.NUnitV2ResultWriter" Version="3.7.0" />
+        <PackageReference Include="NUnit.Extension.VSProjectLoader" Version="3.9.0" />
+        <PackageReference Include="NUnit.Runners" Version="3.12.0" />
+        <PackageReference Include="NUnit3TestAdapter" Version="4.5.0-alpha.4" />
         <PackageReference Include="Serilog" Version="3.0.0-dev-01998" />
     </ItemGroup>
 
     <ItemGroup>
       <Folder Include="Models\DTO" />
-      <Folder Include="Test\IntegrationTest" />
-      <Folder Include="Test\UITest" />
-      <Folder Include="Test\UnitTest" />
       <Folder Include="ViewComponents" />
       <Folder Include="Views\Shared\ViewComponents" />
+      <Folder Include="wwwroot\images\" />
     </ItemGroup>
 
     <ItemGroup>

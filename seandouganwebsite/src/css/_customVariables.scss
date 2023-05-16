@@ -1,7 +1,26 @@
-﻿// color palette
-$foreground : #c5c392ff;
-$background : #f4a698ff;
-$primary: #73a580ff;
-$accent : #f48668ff;
+﻿// base color palette
+$primary-dark : #4F7CAC;
+$primary-light : #c5c392ff;
+$secondary-dark : #f4a698ff;
+$secondary-light : #f4a698ff;
+$background-dark: #73a580ff;
+$background-light: #4F7CAC;
+$surface : #f48668ff;
+
+// flash state
+$success : #f48668ff;
 $warn :  #dd614aff;
 $error : red(#735);
+
+
+
+// onAccents
+$onPrimary-dark: red(#735);
+$onPrimary-light: red(#735);
+$onSecondary-dark: red(#735);
+$onSecondary-light: red(#735);
+$onBackground-light: red(#735);
+$onBackground-dark: #4F7CAC;
+$onSurface: red(#735);
+$onWarning: red(#735);
+$onError: red(#735);
