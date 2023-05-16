@@ -8,10 +8,11 @@
     </PropertyGroup>
  
     <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
-        <Exec Command="npm install" />
-        <Exec Command="npm run dev" />
+        <Exec Command="npm install" ConsoleToMSBuild="true" />
+        <Exec Command="powershell -File run-dev.ps1" ConsoleToMSBuild="true" />
+        <Exec Command="dotnet test --no-build --no-restore" />
     </Target>
-
+    
     <ItemGroup>
         <PackageReference Include="FluentAssertions" Version="6.11.0" />
         <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.13" />

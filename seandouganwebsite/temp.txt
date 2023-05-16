@@ -1,0 +1,52 @@
+
+> seandouganwebsite@1.0.0 dev
+> npm run test && npm run build
+
+
+> seandouganwebsite@1.0.0 test
+> jest
+
+PASS Test/Frontend/Unit/testSumFunction.test.js
+  √ adds 1 + 2 to equal 3 (2 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       1 passed, 1 total
+Snapshots:   0 total
+Time:        0.676 s, estimated 1 s
+Ran all test suites.
+
+> seandouganwebsite@1.0.0 build
+> webpack
+
+assets by chunk 188 KiB (name: main)
+  asset [1m[32mmain.css[39m[22m 187 KiB [1m[33m[compared for emit][39m[22m (name: main) 1 related asset
+  asset [1m[32mmain.entry.js[39m[22m 696 bytes [1m[33m[compared for emit][39m[22m [1m[32m[minimized][39m[22m (name: main) 1 related asset
+asset [1m[32mvendors-node_modules_jquery-validation-unobtrusive_dist_jquery_validate_unobtrusive_js.entry.js[39m[22m 117 KiB [1m[33m[compared for emit][39m[22m [1m[32m[minimized][39m[22m (id hint: vendors) 1 related asset
+asset [1m[32mruntime.entry.js[39m[22m 1.12 KiB [1m[33m[compared for emit][39m[22m [1m[32m[minimized][39m[22m (name: runtime) 1 related asset
+Entrypoint [1mmain[39m[22m 307 KiB (1.13 MiB) = [1m[32mruntime.entry.js[39m[22m 1.12 KiB [1m[32mvendors-node_modules_jquery-validation-unobtrusive_dist_jquery_validate_unobtrusive_js.entry.js[39m[22m 117 KiB [1m[32mmain.css[39m[22m 187 KiB [1m[32mmain.entry.js[39m[22m 696 bytes 4 auxiliary assets
+orphan modules 781 KiB (javascript) 975 bytes (runtime) [1m[33m[orphan][39m[22m 25 modules
+runtime modules 2.76 KiB 4 modules
+cacheable modules 355 KiB (javascript) 187 KiB (css/mini-extract)
+  modules by path [1m./src/[39m[22m 287 bytes (javascript) 187 KiB (css/mini-extract)
+    modules by path [1m./src/ts/*.ts[39m[22m 237 bytes
+      [1m./src/ts/main.ts[39m[22m 150 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+      [1m./src/ts/testSumFunction.ts[39m[22m 87 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+    modules by path [1m./src/css/*.scss[39m[22m 50 bytes (javascript) 187 KiB (css/mini-extract)
+      [1m./src/css/main.scss[39m[22m 50 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+      css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]![1m./src/css/main.scss[39m[22m 187 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+  modules by path [1m./node_modules/[39m[22m 355 KiB
+    [1m./node_modules/jquery/dist/jquery.js[39m[22m 286 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+    [1m./node_modules/jquery-validation/dist/jquery.validate.js[39m[22m 50 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+    [1m./node_modules/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js[39m[22m 19.4 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+
+[1m[31mERROR[39m[22m in [1m[eslint] 
+C:\Users\svoog\RiderProjects\seandouganwebsite\seandouganwebsite\src\ts\testSumFunction.ts
+  1:33  [1m[31merror[39m[22m[1m  Multiple spaces found before '{'                                                        no-multi-spaces
+  2:5   [1m[31merror[39m[22m[1m  Unsafe return of an `any` typed value                                                   @typescript-eslint/no-unsafe-return
+  2:12  [1m[31merror[39m[22m[1m  Operands of '+' operation with any is possible only with string, number, bigint or any  @typescript-eslint/restrict-plus-operands
+
+✖ 3 problems (3 errors, 0 warnings)
+  1 [1m[31merror[39m[22m[1m and 0 warnings potentially fixable with the `--fix` option.
+[39m[22m
+
+webpack 5.82.0 compiled with [1m[31m1 error[39m[22m in 7942 ms

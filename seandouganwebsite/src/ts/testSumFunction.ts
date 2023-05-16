@@ -1,4 +1,4 @@
-﻿function testSumFunction(a : number, b : number) : number {
+﻿function testSumFunction(a , b )  {
     return a + b;
 }
 
