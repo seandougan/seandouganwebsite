@@ -1,6 +1,12 @@
-﻿namespace seandouganwebsite.Controllers;
+﻿using Microsoft.AspNetCore.Mvc;
 
-public class GamesController
+namespace seandouganwebsite.Controllers;
+
+public class GamesController : BaseController
 {
-    
+    // GET
+    public IActionResult Index()
+    {
+        return View("~/views/Home/Partners.cshtml");
+    }
 }
