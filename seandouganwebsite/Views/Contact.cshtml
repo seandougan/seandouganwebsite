@@ -1,19 +1,29 @@
-﻿@page
-@model seandouganwebsite.Views.Contact
+﻿@model seandouganwebsite.Models.ViewModels.ContactViewModel
 
-@{
-    Layout = null;
-}
 
 <!DOCTYPE html>
 
-<html>
-<head>
-    <title></title>
-</head>
-<body>
-<div>
-    
-</div>
-</body>
+<html lang="en">
+    <head>
+        <title>Contacts</title>
+    </head>
+    <body>
+    <div>
+        <h1>Contact Sean</h1>
+        <p>
+            I am available for freelance Web Development, Web Design, Mobile Native iOS and Android Development, Desktop Applications, Automated Scripts, Computer Building, CMS Development, Data Migrations, Database Design and Development, Quality Assurance and tutoring. 
+            I have experience with use-cases related to Prescription Drugs, Health Insurance, Logistics Tracking, Warehouse Tracking, Dining, General Labor, Grocery, Customer Conversion Driven Sites and Driving Site Traffic.
+            If you would like to schedule a meeting to discuss some work the easiest way to reach me is telegram, please leave your contact information:
+        </p>
+        @Model.TelegramApiKey
+        <form  type="GET" action="https://api.telegram.org/bot/6042871782:AAEE9QRCpvjoSSKGcEvKDg1dnN8_QIqbx0o/sendMessage">
+             <input type="hidden" name="chat_id" placeholder="website">
+             <input type="hidden" name="parse_mod" value="markdown">
+             <label for="userMessage">Message</label>
+             <textarea id="userMessage" name="text"></textarea>
+             <input type="submit"/>
+        </form>
+
+    </div>
+    </body>
 </html>
