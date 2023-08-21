@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <data name="WelcomeMessage" xml:space="preserve">
+    <value>Bienvenue sur notre site web</value>
+  </data>
+    <data name="FirstNameRequired" xml:space="preserve">
+    <value>Le prénom est requis</value>
+  </data>
+    <!-- Add more translations as needed -->
+</root>
