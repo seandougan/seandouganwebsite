@@ -6,6 +6,8 @@ using Microsoft.Extensions.Hosting;
 using System.Globalization;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc.Razor;
+using seandouganwebsite.Services;
+using seandouganwebsite.Services.Abstractions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,6 +19,8 @@ builder.Services.AddLocalization(options => options.ResourcesPath = "Resources")
 builder.Services.AddMvc()
     .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix)
     .AddDataAnnotationsLocalization();
+
+builder.Services.AddScoped<ILocalizationService, LocalizationService>();
 
 var app = builder.Build();
 
